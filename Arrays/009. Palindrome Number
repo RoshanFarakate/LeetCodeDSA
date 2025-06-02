@@ -5,3 +5,19 @@ Solution :
 2. Declare a reverse int = 0, and a copy of number given.
 3. reverse is equal to x times 10 plus x divided by 10, and x = x/10 until x>0.
 4. Now check if reverse is equal to xcopy. and return it as ans so a the value of return is true; 
+
+
+class Solution {
+    public boolean isPalindrome(int x) {
+        if(x<0){
+            return false;
+        }
+        int reverse = 0;
+        int xcopy = x;
+        while(x>0){
+            reverse = (reverse*10)+(x%10);
+            x /= 10;
+        }
+        return reverse == xcopy;
+    }
+}
