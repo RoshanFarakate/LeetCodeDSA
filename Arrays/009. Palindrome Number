@@ -1,0 +1,7 @@
+https://leetcode.com/problems/palindrome-number/description/
+
+Solution : 
+1. First check if the number is < 0; if yes return false;
+2. Declare a reverse int = 0, and a copy of number given.
+3. reverse is equal to x times 10 plus x divided by 10, and x = x/10 until x>0.
+4. Now check if reverse is equal to xcopy. and return it as ans so a the value of return is true; 
